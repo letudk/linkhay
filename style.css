@@ -1,0 +1,175 @@
+/*
+Theme Name: linkhay
+Author: LETU
+Description: Linkhay clone type.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: linkhay
+*/
+
+/* chuẩn hoá theme */
+html{
+	font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body{
+font-size:18px;
+background: var(--body);
+color:var(--text);
+line-height: 1.4;
+margin:0px;
+}
+main, .fix-menu{
+margin:auto;
+max-width:1300px;  
+padding:0px 10px 0px 10px;
+}
+* {
+    scrollbar-color: var(--scroll) #ffffff00;
+    scrollbar-width: thin !important;
+}
+/* scroll */
+::-webkit-scrollbar {
+    width: 8px;
+	height: 8px;
+	background:none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll);
+}
+::-webkit-scrollbar-track {
+    background-color:none;
+}
+ol, ul{
+	list-style-type: none;
+	margin: 0px;
+    padding: 0px;
+}
+body button, body input, body textarea, body select{
+border:none;
+font-size:16px;
+outline: none;
+box-sizing: border-box;
+font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body button, body input{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+    background: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    overflow: visible;
+}
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+body h1{
+	padding:0px;
+	margin:0px;
+	margin-bottom:10px;
+	font-size:25px;
+}
+body h2{
+	padding:0px;
+	margin:0px;
+	margin-bottom:10px;
+	font-size:23px;
+}
+body h3{
+	font-size:22px;
+}
+body h4{
+	font-size:21px;
+}
+body a{text-decoration: none;color:var(--htext);}
+
+/* Tùy chỉnh tìm kiếm  */
+form.compact-search  {
+    padding: 0px 16px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    background-color:#e5e6ed;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#otim{
+    font-size: 13px;
+}
+
+@media (min-width: 992px) {
+	.search-form {
+		width: 400px;
+	}
+}
+@media (max-width: 768px){
+	.search-form {
+		width: 300px;
+	}
+}
+@media (max-width: 576px){
+	.search-form {
+		width: 256px;
+	}
+}
+
+.notifications{
+    width: 300px;
+    height: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 63px;
+    right: 62px;
+    border-radius: 5px 0px 5px 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+ .notifications h2{
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #999
+}
+.notifications h2 span{
+    color: #f00
+}
+.notifications-item{
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 6px 9px;
+    margin-bottom: 0px;
+    cursor: pointer
+}
+.notifications-item:hover{
+    background-color: #eee
+}
+.notifications-item img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 9px;
+    border-radius: 50%;
+    margin-top: 2px
+}
+.notifications-item .text h4{
+    color: #777;
+    font-size: 16px;
+    margin-top: 3px
+}
+.notifications-item .text p{
+    color: #aaa;
+    font-size: 12px
+}

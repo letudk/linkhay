@@ -195,3 +195,11 @@ button#bell {
     justify-content: flex-start;
     align-items: center;
 }
+
+/* css add for edit homepage */
+
+.up-vote >i{
+    font-size: 35px !important;
+    border: solid 1px #ddd;
+    padding: 10px;
+}

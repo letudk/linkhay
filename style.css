@@ -173,3 +173,25 @@ form.compact-search  {
     color: #aaa;
     font-size: 12px
 }
+button#bell>i , .use-profile>i {
+    font-size: 25px;
+}
+
+button#bell {
+    margin-right: 15px;
+} 
+.menu-categories>ul{
+    display: flex;
+}
+.menu-categories>ul >li{
+    margin: 20px 10px 20px 10px;
+    border: solid 1px #ddd;
+    border-radius: 20px;
+    padding: 2px 20px;
+}
+
+.logo-search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

@@ -5,18 +5,23 @@
       <div class="col-md-10">
          <div class = 'hello-use' style = "margin:20px 0px;">
                <?php
-               date_default_timezone_set("Asia/Ho_Chi_Minh");
+                    date_default_timezone_set("Asia/Ho_Chi_Minh");
                      $hour = date("h");
                      $TY = date("A");
                      if($hour > 6 && $hour < 12 && $TY == 'AM'){
-                        $hellos = 'Buổi sáng';
+                        $hellos = 'buổi sáng';
                      }elseif($hour >= 1&& $hour <=6 && $TY == 'PM'){
-                        $hellos = 'Buổi chiều';
+                        $hellos = 'buổi chiều';
                      }else{
-                        $hellos = 'Buổi tối';
+                        $hellos = 'buổi tối';
                      };
-                     ?>
-                     <h1><i class="fa-solid fa-cloud"></i> Chào <?php echo $hellos; ?> </h1>
+                ?>
+                <div class = 'row row-grid justify-content-center'>
+                    <div class = 'col-md'>
+                        <h1>Chào <?php echo $hellos; ?>, Lê Tú</h1>
+                        <p>Chúc bạn hôm nay luôn thuận lợi.</p>
+                    </div>
+                </div>
             </div>
          </div>
       </div>
@@ -25,11 +30,10 @@
 
 <section id="sectionJobList" class="section section-job-list gradient-light--lean-left">
       <div class="container">
-
         <div class="row row-grid justify-content-center">
           <div class="col-md-10">
             <div class="job-list__wrapper mb-6">
-              <h3 class="mb-4">Top Website</h3>
+              <h3 class="mb-4">Top dự án</h3>
 
               <a href="career-single.html" class="card p-0 mb-3 border-0 shadow--on-hover">
                 <div class="card-body">
@@ -47,7 +51,7 @@
                     </span>
 
                     <span class="d-none d-md-block col-1 text-center color--text">
-                      <small><i class="fa-solid fa-caret-up"></i></small>
+                        <i class="fa-solid fa-caret-up"></i>
                     </span>
                   </span>
                 </div>
@@ -55,7 +59,7 @@
             </div>
 
             <div class="job-list__wrapper mb-6">
-              <h3 class="mb-4">Website mới</h3>
+              <h3 class="mb-4">Dự án mới</h3>
 
               <a href="career-single.html" class="card p-0 mb-3 border-0  shadow--on-hover">
                 <div class="card-body">
@@ -73,7 +77,7 @@
                     </span>
 
                     <span class="d-none d-md-block col-1 text-center color--text">
-                      <small><i class="fas fa-chevron-right"></i></small>
+                        <i class="fa-solid fa-caret-up"></i>
                     </span>
                   </span>
                 </div>

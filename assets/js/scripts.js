@@ -4,11 +4,11 @@ jQuery(document).ready(function(){
         var color = jQuery(this).text();
         if(down){ 
             jQuery('#box').css('height','0px');
-            jQuery('#box').css('opacity','0');
+            jQuery('#box').css('display','none');
             down = false;
         }else{ 
             jQuery('#box').css('height','auto');
-            jQuery('#box').css('opacity','1');
+            jQuery('#box').css('display','table');
             down = true; 
         } 
     }); 

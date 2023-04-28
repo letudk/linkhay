@@ -21,7 +21,7 @@ function theme_enqueue_scripts() {
     // all scripts
     wp_register_script('theme-script', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery') );
     wp_enqueue_script('theme-script');
-    wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery') );
+    wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery') );
     wp_enqueue_script('bootstrap');
 }
 

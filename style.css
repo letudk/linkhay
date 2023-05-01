@@ -296,3 +296,30 @@ button#bell {
 a {
     text-decoration: none !important;
 }
+
+/* css upvote post homepage */
+.upvote > i {
+    padding: 20px 20px;
+    border: solid 1px #ddd;
+}
+.upvote-number{
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+
+
+.blog-list .item .post-thumb {
+    border-radius: 2px;
+}
+
+@media (min-width: 1200px) {
+    .blog-list .post-thumb {
+        max-width: 150px;
+    }
+}
+@media (min-width: 992px) {
+    .blog-list .post-thumb {
+        max-width: 100%;
+    }
+}

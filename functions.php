@@ -3,12 +3,9 @@
  * Funciton
  */
  
-/**
- * Remove js not using
- */
 require_once(get_template_directory() .'/inc/customize.php');
 require_once(get_template_directory() .'/inc/categories_menu.php');
-
+require get_template_directory() . '/inc/project.php';
 /**
  * Enqueue scripts and styles
  */
@@ -40,3 +37,23 @@ remove_action( 'wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'rest_output_link_wp_head', 10);
 remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 remove_action('template_redirect', 'rest_output_link_header', 11, 0);
+
+// Khởi chạy chức năng tối ưu hoá cho website-------------
+// Remove jquery-migrate
+function remove_jquery_migrate( $scripts ) {
+    if ( ! is_admin() && isset( $scripts->registered['jquery'] ) ) {
+        $script = $scripts->registered['jquery'];
+    if ( $script->deps ) { 
+        $script->deps = array_diff( $script->deps, array( 'jquery-migrate' ) );
+    }
+    }
+    }
+add_action( 'wp_default_scripts', 'remove_jquery_migrate' );
+
+// ngon ngu
+load_theme_textdomain( 'linkhay', get_template_directory() .'/lang/');
+$locale = get_locale();
+$locale_file = get_template_directory() . "/lang/$locale.php";
+if ( is_readable( $locale_file ) ) {
+    require_once( $locale_file );
+}

@@ -28,55 +28,73 @@
    </div>
 </section>
 
-<section id="sectionJobList" class="section section-job-list gradient-light--lean-left">
+<section id="bloglist" class="section blog-list  gradient-light--lean-left">
       <div class="container">
         <div class="row row-grid justify-content-center">
           <div class="col-md-10">
-            <div class="job-list__wrapper mb-6">
+
+            <div class="project-list mb-6">
               <h3 class="mb-4">Dự án nổi bật</h3>
               <div class="container single-col-max-width">
-			    <div class="item mb-5">
-				    <div class="row g-3 g-xl-0">
-					    <div class="col-2 col-xl-3">
-					        <img class="img-fluid post-thumb " src="https://themes.3rdwavemedia.com/demo/bs5/devblog/assets/images/blog/blog-post-thumb-1.jpg" alt="image">
-					    </div>
-					    <div class="col">
-						    <h3 class="title mb-1"><a class="text-link" href="blog-post.html">Top 3 JavaScript Frameworks</a></h3>
-						    <div class="meta mb-1"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a class="text-link" href="#">8 comments</a></span></div>
-						    <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="text-link" href="blog-post.html">Read more →</a>
-					    </div><!--//col-->
-				    </div><!--//row-->
-			    </div><!--//item-->
-			    
-				
-		    </div>
-            </div>
+                  <div class = "project-item">
+                      <div class = "image-project">
+                          <img class = "img-project" src = "https://ph-files.imgix.net/95497a20-f3cd-4687-8e3c-87c748bfd0a1.png"></img>
+                      </div>
+                      <div class = "content-project">
+                          <h1>monday.com</h1>
+                          <p>Build your ideal workflow with 200+ customizable templates</p>
+                      </div>
+                      <div class = "upvote">
+                      <i class="fas fa-caret-up"></i>
+                      </div>
+                  </div> 
+                  <!-- end item  -->
+                  <div class = "project-item">
+                      <div class = "image-project">
+                          <img class = "img-project" src = "https://ph-files.imgix.net/2ed399a1-acc2-458a-95d1-ca4190b3ba86.png"></img>
+                      </div>
+                      <div class = "content-project">
+                          <h1>Trình tạo biểu tượng</h1>
+                          <p>AI tạo ra các biểu tượng ứng dụng được thiết kế tốt để bán</p>
+                      </div>
+                      <div class = "upvote">
+                      <i class="fas fa-caret-up"></i>
+                      </div>
+                  </div>
+			        </div>
+            </div> 
+            <!-- col-md-10 -->
 
-            <div class="job-list__wrapper mb-6">
+            <div class="project-list mb-6">
               <h3 class="mb-4">Dự án mới</h3>
 
-              <a href="career-single.html" class="card p-0 mb-3 border-0  shadow--on-hover">
-                <div class="card-body">
-                  <span class="row justify-content-between align-items-center">
-                    <span class="col-md-5 color--heading">
-                      <span class="badge badge-circle background--success text-white mr-3">FE</span> Front End Developer
-                    </span>
-
-                    <span class="col-5 col-md-3 my-3 my-sm-0 color--text">
-                      <i class="fas fa-clock mr-1"></i> Part time
-                    </span>
-
-                    <span class="col-7 col-md-3 my-3 my-sm-0 color--text">
-                      <i class="fas fa-map-marker-alt mr-1"></i> Sydney, AU
-                    </span>
-
-                    <span class="d-none d-md-block col-1 text-center color--text">
-                        <i class="fa-solid fa-caret-up"></i>
-                    </span>
-                  </span>
-                </div>
-              </a> <!-- Job Card -->
+              <div class="container single-col-max-width">
+                  <div class = "project-item">
+                      <div class = "image-project">
+                          <img class = "img-project" src = "https://ph-files.imgix.net/95497a20-f3cd-4687-8e3c-87c748bfd0a1.png"></img>
+                      </div>
+                      <div class = "content-project">
+                          <h1>monday.com</h1>
+                          <p>Build your ideal workflow with 200+ customizable templates</p>
+                      </div>
+                      <div class = "upvote">
+                      <i class="fas fa-caret-up"></i>
+                      </div>
+                  </div> 
+                  <!-- end item  -->
+                  <div class = "project-item">
+                      <div class = "image-project">
+                          <img class = "img-project" src = "https://ph-files.imgix.net/95497a20-f3cd-4687-8e3c-87c748bfd0a1.png"></img>
+                      </div>
+                      <div class = "content-project">
+                          <h1>monday.com</h1>
+                          <p>Build your ideal workflow with 200+ customizable templates</p>
+                      </div>
+                      <div class = "upvote">
+                      <i class="fas fa-caret-up"></i>
+                      </div>
+                  </div>
+			        </div>
 
               
             </div>

@@ -307,19 +307,15 @@ a {
     font-weight: 400;
     
 }
-
-
-.blog-list .item .post-thumb {
-    border-radius: 2px;
+.img-project {
+    max-width: 100px;
 }
 
-@media (min-width: 1200px) {
-    .blog-list .post-thumb {
-        max-width: 150px;
-    }
+.project-item {
+    display: flex !important;
+    padding: 20px 0;
 }
-@media (min-width: 992px) {
-    .blog-list .post-thumb {
-        max-width: 100%;
-    }
+.content-project {
+    margin-right: auto;
+    margin-left: 10px;
 }

@@ -5,7 +5,11 @@
  
 require_once(get_template_directory() .'/inc/customize.php');
 require_once(get_template_directory() .'/inc/categories_menu.php');
+// require_once(get_template_directory() .'/inc/project.php');
 require get_template_directory() . '/inc/project.php';
+
+// kích hoạt trình soạn thảo cũ
+add_filter('use_block_editor_for_post', '__return_false');
 /**
  * Enqueue scripts and styles
  */
@@ -50,10 +54,6 @@ function remove_jquery_migrate( $scripts ) {
     }
 add_action( 'wp_default_scripts', 'remove_jquery_migrate' );
 
-// ngon ngu
-load_theme_textdomain( 'linkhay', get_template_directory() .'/lang/');
-$locale = get_locale();
-$locale_file = get_template_directory() . "/lang/$locale.php";
-if ( is_readable( $locale_file ) ) {
-    require_once( $locale_file );
-}
+// add support thumbnail
+add_theme_support('post-thumbnails');
+add_post_type_support( 'project', 'thumbnail' );    
